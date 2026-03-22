@@ -1,3 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import 'tailwindcss';
+@theme {
+    --color-primary: #A855F7;
+    --color-secondary: #925FC6;
+    --color-tertiary: #C05177;
+    --color-neutral: #0A0A0B;
+}
+
+.nav-btn {
+    transition: transform 1s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1) translateY(-4px);
+}
