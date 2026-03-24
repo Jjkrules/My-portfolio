@@ -1,7 +1,7 @@
-#directions to run:
-npm install
-npm install -g @angular/cli
-npm install lucide-angular
+#directions to run: <br />
+#npm install <br />
+#npm install -g @angular/cli <br />
+#npm install lucide-angular <br />
 
-#to run localhost:
-ng serve
+#to run localhost: <br />
+#ng serve <br />
