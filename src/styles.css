@@ -15,18 +15,18 @@
 @keyframes glow-pulse {
   0% {
     transform: scale(1);
-    filter: brightness(100%) blur(0px);
+    filter: brightness(95%) blur(0px);
   }
   50% {
     transform: scale(1.05);
-    filter: brightness(110%) blur(0px);
+    filter: brightness(105%) blur(0.5px);
   }
   100% {
     transform: scale(1);
-    filter: brightness(100%) blur(0px);
+    filter: brightness(95%) blur(0px);
   }
 }
 
 .animate-glow {
-  animation: glow-pulse 8s infinite ease-in-out;
+  animation: glow-pulse 16s infinite ease-in-out;
 }
