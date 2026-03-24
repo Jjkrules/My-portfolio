@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './landing.component.html',
 })
-export class LandingComponent {}
+export class LandingComponent {
+  glowColor = 'rgba(255, 255, 255, 1)';
+  fadeToColor = 'rgba(0, 0, 0, 1)';
+
+  my_pfp = '/assets/pfp.png';
+}
