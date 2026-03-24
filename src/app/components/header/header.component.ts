@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LucideAngularModule, Code } from 'lucide-angular';
+import { LucideAngularModule, ChevronLeft, ChevronRight } from 'lucide-angular';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +7,5 @@ import { LucideAngularModule, Code } from 'lucide-angular';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
-  icons = { Code };
+  icons = { ChevronLeft, ChevronRight };
 }
