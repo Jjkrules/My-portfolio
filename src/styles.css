@@ -27,6 +27,41 @@
   }
 }
 
+@keyframes btn-gradient {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
 .animate-glow {
   animation: glow-pulse 16s infinite ease-in-out;
+}
+
+.animate-gradient {
+  background: linear-gradient(to right, var(--color-tertiary), var(--color-primary), var(--color-tertiary));
+  background-size: 200% auto;
+  background-position: 0% 50%;
+  transform: scale(1);
+  filter: brightness(0.9);
+
+  transition: transform 0.5s ease, filter 0.5s ease, background-position 0.5s ease;
+}
+
+.animate-gradient:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+
+  animation: btn-gradient 3s ease infinite;
+}
+
+.btn-anim {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.btn-anim:hover {
+  transform: scale(1.05);
+  filter: brightness(1.25);
 }
