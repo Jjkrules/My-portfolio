@@ -14,13 +14,20 @@
 
 @keyframes glow-pulse {
   0% {
-    filter: brightness(100%)
+    filter: brightness(100%);
+    rotate: 0deg;
   }
-  50% {
-    filter: brightness(115%)
+  25% {
+    filter: brightness(115%);
+    rotate: -2deg;
+  }
+  75% {
+    filter: brightness(115%);
+    rotate: 2deg;
   }
   100% {
-    filter: brightness(100%)
+    filter: brightness(100%);
+    rotate: 0deg;
   }
 }
 
