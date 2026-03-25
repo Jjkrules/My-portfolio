@@ -1,9 +1,9 @@
-<div class="flex h-50 ml-20 mr-20 rounded-4xl flex-row justify-around">
-    <div class="flex max-w-256 flex-col mt-40 whitespace-nowrap">
+<div class="flex h-50 h-screen ml-10 mr-10 rounded-4xl flex-row justify-around">
+    <div class="flex max-w-256 flex-col mt-60 whitespace-nowrap">
         <span class="block text-6xl text-white font-serif ">Hello, my name is <span class="text-6xl text-primary">Jeswin James</span></span>
         <span class="block text-2xl text-neutral-400 mt-2 font-serif">Computer Engineer | Temple Alumni | CS Enthusiast</span>
         <span class="block text-xl text-primary mt-12 font-serif">Building the future of tech at <span class="text-green-600 font-semibold">GreenXT</span></span>
-        <span class="block text-xl text-primary mt-1 font-serif">Driven by <span class="text-blue-600 font-semibold">Logic</span> powered by <span class="text-red-600 font-semibold">Curiosity</span></span>
+        <span class="block text-xl text-primary mt-1 font-serif">Driven by <span class="text-blue-500 font-semibold">Logic</span> powered by <span class="text-red-600 font-semibold">Curiosity</span></span>
         <span class="block text-xl text-primary mt-1 font-serif">Always exploring the next breakthrough in <span class="text-tertiary font-semibold">Computer Science!</span></span>
         <div class="flex mt-16 justify-start">
             <button class="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-tertiary)] font-black w-48 h-16 rounded-2xl pl-8 pr-8 font-serif animate-gradient cursor-pointer">Download CV</button>
@@ -12,9 +12,17 @@
     </div>
     <div>
         <div 
-        class="w-128 h-128 rounded-full ring-8 ring-white overflow-hidden border-white-20 mt-20 mr-20 animate-glow"
+        class="w-128 h-128 rounded-full ring-8 ring-white overflow-hidden border-white-20 mt-40 mr-20 animate-glow"
         [style.background]="'radial-gradient(circle, ' + glowColor + ' 65%, ' + fadeToColor + ' 80%)'">
             <img src="/pfp.png" class="w-full h-full object-cover">
+        </div>
+    </div>
+    <div class="absolute bottom-32 flex flex-col items-center gap-2 font-serif animate-bounce">
+        <span class="text-white">SCROLL DOWN</span>
+        <div class="rounded-full border-primary border-2">
+            <a>
+                <lucide-icon [img]="icons.ChevronsDown" class="w-8 h-8 stroke-primary"></lucide-icon>
+            </a>
         </div>
     </div>
 </div>

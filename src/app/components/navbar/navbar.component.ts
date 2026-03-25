@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LucideAngularModule, User, FolderKanban, Briefcase, BadgeCheck } from 'lucide-angular';
+import { LucideAngularModule, User, FolderKanban, Briefcase, BadgeCheck, Wrench } from 'lucide-angular';
 
 @Component({
   selector: 'app-navbar',
@@ -7,5 +7,5 @@ import { LucideAngularModule, User, FolderKanban, Briefcase, BadgeCheck } from '
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
-  icons = { User, FolderKanban, Briefcase, BadgeCheck };
+  icons = { User, FolderKanban, Briefcase, BadgeCheck, Wrench };
 }
