@@ -1,4 +1,5 @@
 import { Component, ElementRef, Renderer2, ViewChild, viewChild } from '@angular/core';
+import { Scale } from 'lucide-angular';
 
 @Component({
   selector: 'app-about-me',
@@ -25,16 +26,27 @@ export class AboutMeComponent {
       const isTarget = item.id === section;
 
       if (!isTarget && item.el.dataset['state'] === 'small') {return}
-      if(isTarget && item.el.dataset['state'] === 'large') {return}
+      if(isTarget && item.el.dataset['state'] === 'large') {
+        item.el.animate([
+          { transform: 'scale(1.1)', opacity: 1 },
+          { transform: 'scale(1)', opacity: 0.05 }
+        ], {
+          duration: 1000,
+          easing: 'ease-out',
+          fill: 'forwards'
+        })
+        item.el.dataset['state'] = 'small';
+        return;
+      }
       
       item.el.animate([
         { 
           transform: isTarget ? 'scale(1)' : 'scale(1.1)', 
-          opacity: isTarget ? 0.25 : 1 
+          opacity: isTarget ? 0.05 : 1 
         },
         { 
           transform: isTarget ? 'scale(1.1)' : 'scale(1)', 
-          opacity: isTarget ? 1 : 0.15 
+          opacity: isTarget ? 1 : 0.05 
         }
       ], {
         duration: 1000,
