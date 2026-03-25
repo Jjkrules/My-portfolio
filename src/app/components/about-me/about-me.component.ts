@@ -13,10 +13,8 @@ export class AboutMeComponent {
   activeSection: string = 'none';
 
   focusSection(section: string) {
-    // 1. Update the state
     this.activeSection = section;
 
-    // 2. Define our targets in an array
     const sections = [
       { id: 'journey', el: this.journeyBox.nativeElement },
       { id: 'spark', el: this.sparkBox.nativeElement },
@@ -26,9 +24,8 @@ export class AboutMeComponent {
     sections.forEach(item => {
       const isTarget = item.id === section;
 
-      if (!isTarget && item.el.dataset['state'] === 'small') {
-        return;
-      }
+      if (!isTarget && item.el.dataset['state'] === 'small') {return}
+      if(isTarget && item.el.dataset['state'] === 'large') {return}
       
       item.el.animate([
         { 
