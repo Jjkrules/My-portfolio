@@ -6,14 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <app-header></app-header>
-        <div>
+    <div class="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory p-5">
+        <div class="snap-start h-screen relative">
+            <app-header></app-header>
             <app-landing></app-landing>
+        </div>
+        <div class="snap-start h-screen">
             <app-about-me></app-about-me>
-            <app-experience></app-experience>
-            <app-skills></app-skills>
-            <app-projects></app-projects>
+        </div>
+        <div class="snap-start h-screen">
+            <app-experience></app-experience>        
+        </div>
+        <div class="snap-start h-screen">
+            <app-skills></app-skills>        
+        </div>
+        <div class="snap-start h-screen">
+            <app-projects></app-projects>           
+        </div>
+        <div class="snap-start h-screen">
             <app-certifications></app-certifications>
         </div>
         <app-navbar></app-navbar>

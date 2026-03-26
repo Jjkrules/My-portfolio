@@ -1,27 +1,30 @@
 <div class="w-screen h-screen bg-neutral text-white">
     <span class="flex justify-center text-4xl font-serif font-semibold">About&nbsp;<span class="text-primary"> Me!</span></span>
     <div>
-        <div class="flex justify-evenly mt-16">
-            <div class="flex flex-col justify-center items-center">
-                <button #journeyBtn (click)="focusSection('journey')" class="text-black w-48 pt-2 pb-2 cursor-pointer rounded-lg text-2xl font-serif font-bold border-2 border-white animate-journey-btn-gradient opacity-15">The Journey</button>
-                <div #journeyBox data-state="small" class="bg-primary w-104 h-134 mt-12 rounded-xl bg-gradient-to-br from-[#66DDAA] to-[#8FBC8F] opacity-15 border-2 border-white">
-                    <div class="p-2 font-serif text-green-800 font-bold text-lg">
+        <div #fadeContainer class="flex justify-around mt-16">
+            <div class="flex flex-col justify-center items-center about-me-boxes">
+                <span class="flex text-purple-800 w-48 pt-2 pb-2 rounded-lg text-2xl font-serif justify-center bg-gradient-to-b from-purple-900 via-violet-950 to-black font-bold border-2 border-purple-800 shadow-lg shadow-purple-900/50">The Journey</span>
+                <div class="bg-primary w-104 h-134 mt-12 rounded-xl bg-gradient-to-b from-purple-900 via-violet-950 to-black border-2 border-purple-800 shadow-lg shadow-purple-900">
+                    <div class="p-2 font-serif text-secondary font-bold text-lg">
+                        <!-- YOUR BACKGROUND -->
                         text
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center">
-                <button #sparkBtn (click)="focusSection('spark')" class="text-black w-48 pt-2 pb-2 cursor-pointer rounded-lg text-2xl font-serif font-bold border-2 border-white animate-spark-btn-gradient opacity-15">The Spark</button>
-                <div #sparkBox data-state="small" class="w-104 h-134 mt-12 rounded-xl bg-gradient-to-br from-orange-400 to-[#FFD700] opacity-15 border-2 border-white">
-                    <div class="p-2 font-serif text-yellow-800 font-bold text-lg">
+            <div class="flex flex-col justify-center items-center about-me-boxes">
+                <span class="flex text-purple-800 w-48 pt-2 pb-2 rounded-lg text-2xl font-serif justify-center bg-gradient-to-b from-purple-900 via-violet-950 to-black font-bold border-2 border-purple-800 shadow-lg shadow-purple-900/50">The Spark</span>
+                <div class="w-104 h-134 mt-12 rounded-xl bg-gradient-to-b from-purple-900 via-violet-950 to-black border-2 border-purple-800 shadow-lg shadow-purple-900">
+                    <div class="p-2 font-serif text-secondary font-bold text-lg">
+                        <!-- WHAT MADE YOU GET INTO CS -->
                         text
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center">
-                <button #futureBtn data-state="small" (click)="focusSection('future')" class="text-black w-48 pt-2 pb-2 cursor-pointer rounded-lg text-2xl font-serif font-bold border-2 border-white animate-future-btn-gradient opacity-15">The Future</button>
-                <div #futureBox data-state="small" class="bg-primary w-104 h-134 mt-12 rounded-xl bg-gradient-to-br from-[var(--color-primary)] to-[#D946EF] opacity-15 border-2 border-white">
-                    <div class="p-2 font-serif text-purple-800 font-bold text-lg">
+            <div class="flex flex-col justify-center items-center about-me-boxes">
+                <span class="flex text-purple-800 w-48 pt-2 pb-2 rounded-lg text-2xl font-serif justify-center bg-gradient-to-b from-purple-900 via-violet-950 to-black font-bold border-2 border-purple-800 shadow-lg shadow-purple-900">The Future</span>
+                <div class="bg-primary w-104 h-134 mt-12 rounded-xl bg-gradient-to-b from-purple-900 via-violet-950 to-black border-2 border-purple-800 shadow-lg shadow-purple-900">
+                    <div class="p-2 font-serif text-secondary font-bold text-lg">
+                        <!-- WHAT YOU PLAN FOR THE FUTURE -->
                         text
                     </div>
                 </div>

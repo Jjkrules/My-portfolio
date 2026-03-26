@@ -40,6 +40,17 @@
   }
 }
 
+@keyframes customFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
 .animate-glow {
   animation: glow-pulse 16s infinite ease-in-out;
 }
@@ -54,54 +65,25 @@
   transition: transform 0.5s ease, filter 0.5s ease, background-position 0.5s ease;
 }
 
-.animate-journey-btn-gradient {
-  background: linear-gradient(to right, #66DDAA, #8FBC8F, #66DDAA);
-
-  background-size: 200% auto;
-  background-position: 0% 50%;
-  transform: scale(1);
-  filter: brightness(0.9);
-  opacity: 0.15;
-
-  transition: transform 0.5s ease, filter 0.5s ease, background-position 0.5s ease, opacity 1s ease;
-}
-
-.animate-spark-btn-gradient {
-  background: linear-gradient(to right, orange, gold, orange);
-
-
-  background-size: 200% auto;
-  background-position: 0% 50%;
-  transform: scale(1);
-  filter: brightness(0.9);
-  opacity: 0.15;
-
-  transition: transform 0.5s ease, filter 0.5s ease, background-position 0.5s ease, opacity 1s ease;
-}
-
-.animate-future-btn-gradient {
-  background: linear-gradient(to right, var(--color-primary), magenta, var(--color-primary));
-
-
-  background-size: 200% auto;
-  background-position: 0% 50%;
-  transform: scale(1);
-  filter: brightness(0.9);
-  opacity: 0.15;
-
-  transition: transform 0.5s ease, filter 0.5s ease, background-position 0.5s ease, opacity 1s ease;
-}
-
-.animate-gradient:hover, 
-.animate-journey-btn-gradient:hover, 
-.animate-spark-btn-gradient:hover, 
-.animate-future-btn-gradient:hover {
+.animate-gradient:hover {
   transform: scale(1.05);
   filter: brightness(1.05);
-  opacity: 1;
 
   animation: btn-gradient 3s ease infinite;
 }
+
+/* ABOUT ME BOXES HOVER ANIM */
+.about-me-boxes {
+  filter: brightness(0.9);
+
+  transition: transform 1s ease, filter 1s ease;
+}
+
+.about-me-boxes:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1)
+}
+
 
 /* BOTTOM IS FOR CONTACT ME BTN */
 .btn-anim {
@@ -111,16 +93,4 @@
 .btn-anim:hover {
   transform: scale(1.05);
   filter: brightness(1.25);
-}
-
-/* BOTTOM IS FOR FOCUS BOXES ME BTN */
-.box-focus {
-  transition: transform 0.5 ease, filter 0.5s ease;
-  opacity: 1;
-}
-
-.box-focus:active {
-  transform: scale(1.05);
-  filter: brightness(1.25);
-  opacity: 1;
 }
