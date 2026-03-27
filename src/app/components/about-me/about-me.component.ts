@@ -8,7 +8,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 export class AboutMeComponent implements AfterViewInit {
   @ViewChild('fadeContainer') fadeContainer!: ElementRef;
 
-ngAfterViewInit() {
+  ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

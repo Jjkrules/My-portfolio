@@ -1,2 +1,35 @@
-<div class="w-screen h-screen bg-neutral text-white">skills works!</div>
+<div class="w-full h-screen overflow-hidden">
+    <span class="flex justify-center text-4xl font-serif font-semibold text-white pt-4">My&nbsp;<span class="text-primary"> Skills</span></span>
 
+    <div class="flex flex-row justify-center items-center h-200">
+        <div (click)="prevIndex()" class="w-12 h-12 bg-gray-200 cursor-pointer hover:bg-gray-300 rounded-full"></div>
+
+        <div class="overflow-hidden w-380"> 
+            <div #track class="flex flex-row transition-transform duration-500">
+                
+                <div *ngFor="let skill of displaySkills; let i = index" 
+                    class="bg-primary w-104 h-134 mt-12 rounded-xl bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% border-2 border-purple-800 shadow-lg shadow-purple-900 shadow-shifted shrink-0 transition-all duration-500 mb-5"
+                    [class.scale-100]="curIndex === i"
+                    [class.opacity-100]="curIndex === i"
+                    [class.scale-80]="curIndex !== i"
+                    [class.opacity-25]="curIndex !== i">
+                    
+                    <div class="flex flex-col">
+                        <span class="font-serif text-4xl font-black text-primary pl-4 pt-2">{{skill.title}}</span>
+                        <div class="flex justify-center mt-6">
+                            <div 
+                            class="flex w-full ml-4 mr-4 pl rounded-xl overflow-hidden border-white border-2 shadow-lg shadow-black-600 shadow-offset-x-12 shadow-offset-y-12">
+                                <img src="{{skill.img}}" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <hr class="border-1 border-purple-900 mt-2 ml-4 mr-4">
+                        <span class="font-serif text-xl text-primary pl-4 pt-2 whitespace-pre-line">{{skill.description}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div (click)="nextIndex()" class="w-12 h-12 bg-gray-200 cursor-pointer hover:bg-gray-300 rounded-full"></div>
+    </div>
+</div>

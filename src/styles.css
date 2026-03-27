@@ -10,6 +10,7 @@
     --color-neutral: #0A0A0B;
 
     --font-brand: "Times New Roman", Times, serif;
+    --shadow-shifted: 10px 10px 30px -5px rgba(168, 85, 247, 0.5);
 }
 
 @keyframes glow-pulse {
