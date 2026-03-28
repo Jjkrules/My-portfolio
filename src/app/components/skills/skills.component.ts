@@ -1,13 +1,16 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LucideAngularModule, ChevronLeft, ChevronRight } from 'lucide-angular';
 
 @Component({
   selector: 'app-skills',
-  imports: [CommonModule],
+  imports: [CommonModule ,LucideAngularModule],
   templateUrl: './skills.component.html',
 })
 export class SkillsComponent {
   @ViewChild('track') trackEl!: ElementRef;
+
+  icons = { ChevronLeft, ChevronRight };
 
   skills = [
     { index: 0, img: "pythonImg.png", title: "Backend Stack", description: "•Back-end Dev \n •Back-end Dev \n •Back-end Dev"},
