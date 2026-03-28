@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LucideAngularModule, SquareArrowOutUpRight} from 'lucide-angular';
+import { LucideAngularModule, SquareArrowOutUpRight, ChevronsDown} from 'lucide-angular';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +10,7 @@ import { LucideAngularModule, SquareArrowOutUpRight} from 'lucide-angular';
 export class ProjectsComponent {
   isBoxDrawn = false;
 
-  icons = { SquareArrowOutUpRight };
+  icons = { SquareArrowOutUpRight, ChevronsDown };
 
   projects = [
     {index: 0, title: "My Portfolio!", img:"projImg.png" , git_hub: "https://github.com/Jjkrules/My-portfolio", proj_link: "", description: "description text", isVisible: false},

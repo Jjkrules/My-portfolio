@@ -1,6 +1,14 @@
 <div class="w-screen h-screen">
     <span class="flex justify-center text-white pt-4 font-serif text-4xl font-semibold">My&nbsp;<span class="text-primary">Projects!</span></span>
     <div class="flex w-full h-full container flex mx-auto max-w-7xl flex-row mt-16 justify-center gap-16">
+        <div class="flex absolute top-20 left-1/2 -translate-x-1/2 flex-col justify-center items-center font-serif animate-bounce">
+            <span class="text-white text-xs">CLICK ME</span>
+            <div class="rounded-full border-primary border-2">
+                <a>
+                    <lucide-icon [img]="icons.ChevronsDown" class="w-4 h-4 stroke-primary"></lucide-icon>
+                </a>
+            </div>
+        </div>
         <div 
         *ngFor="let proj of displayProjects; let i = index"
         class="flex flex-col justify-start items-center pt-2">
@@ -53,7 +61,6 @@
                 </svg>
                 <div 
                 [class.opacity-100]="proj.isVisible"
-                [class.delay-1200]="!proj.isVisible"
                 class="
                 w-full h-full rounded-xl 
                 bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% 
@@ -74,14 +81,20 @@
                         <span class="font-serif text-xl text-primary pl-4 pt-2 whitespace-pre-line">{{proj.description}}</span>
                         <div class="flex absolute bottom-4 right-2 justify-end items-center gap-2 pr-2">
                             <a
-                            href="proj.proj_link"
+                            href="{{proj.proj_link}}"
                             target="_blank" 
-                            rel="noopener noreferrer" 
+                            rel="noopener noreferrer"
                             class="text-gray-400 hover:text-[#A855F7] transition-colors duration-300"
+                            [class.pointer-events-none]="!proj.isVisible"
                             >
                                 <lucide-icon [img]="icons.SquareArrowOutUpRight" class="size-10 stroke-bd-color"></lucide-icon>
                             </a>
-                            <a href="your-github-link" target="_blank" class="text-white hover:text-[#A855F7] transition-all">
+                            <a 
+                            href="{{proj.git_hub}}" 
+                            target="_blank" 
+                            class="text-white hover:text-[#A855F7] transition-all"
+                            [class.pointer-events-none]="!proj.isVisible"
+                            >
                                 <img 
                                     src="https://cdn.simpleicons.org/github/A855F7" 
                                     class="size-10" 
