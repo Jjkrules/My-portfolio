@@ -7,5 +7,5 @@ import { LucideAngularModule, User, FolderKanban, Briefcase, BadgeCheck, Wrench 
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
-  icons = { User, FolderKanban, Briefcase, BadgeCheck, Wrench };
+  icons = { User, FolderKanban, Briefcase, Wrench };
 }
