@@ -1,27 +1,19 @@
 <div class="flex justify-center">
     <div class="flex bg-gradient-to-b from-gray-900 to-purple-900 to-200% from fixed bottom-4 w-fit p-4 flex-row items-center justify-around rounded-4xl z-50 gap-2">
-        <div class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
-            <a>
-                <lucide-icon [img]="icons.User" class="w-8 h-8 stroke-primary"></lucide-icon>
-            </a>
+        <div (click)="scrollTo('about-section')" class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
+            <lucide-icon [img]="icons.User" class="w-8 h-8 stroke-primary"></lucide-icon>
             <span class="text-primary font-bold">ABOUT</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
-            <a>
-                <lucide-icon [img]="icons.Briefcase" class="w-8 h-8 stroke-primary"></lucide-icon>
-            </a>
+        <div (click)="scrollTo('experience-section')" class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
+            <lucide-icon [img]="icons.Briefcase" class="w-8 h-8 stroke-primary"></lucide-icon>
             <span class="text-primary font-bold">EXP</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
-            <a>
-                <lucide-icon [img]="icons.Wrench" class="w-8 h-8 stroke-primary"></lucide-icon>
-            </a>
+        <div (click)="scrollTo('skills-section')" class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
+            <lucide-icon [img]="icons.Wrench" class="w-8 h-8 stroke-primary"></lucide-icon>
             <span class="text-primary font-bold">SKILLS</span>
         </div>
-        <div class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
-            <a>
-                <lucide-icon [img]="icons.FolderKanban" class="w-8 h-8 stroke-primary"></lucide-icon>
-            </a>
+        <div (click)="scrollTo('projects-section')" class="flex flex-col items-center justify-center bg-secondary/40 p-2 rounded-lg transition-all duration-700 ease-in-out hover:scale-110 cursor-pointer min-w-24 min-h-18">
+            <lucide-icon [img]="icons.FolderKanban" class="w-8 h-8 stroke-primary"></lucide-icon>
             <span class="text-primary font-bold">PROJECTS</span>
         </div>
     </div>

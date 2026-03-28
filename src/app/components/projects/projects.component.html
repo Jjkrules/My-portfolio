@@ -1,4 +1,4 @@
-<div class="w-screen h-screen">
+<div id="projects-section" class="w-screen h-screen">
     <span class="flex justify-center text-white pt-4 font-serif text-4xl font-semibold">My&nbsp;<span class="text-primary">Projects!</span></span>
     <div class="flex w-full h-full container flex mx-auto max-w-7xl flex-row mt-16 justify-center gap-16">
         <div class="flex absolute top-20 left-1/2 -translate-x-1/2 flex-col justify-center items-center font-serif animate-bounce">
@@ -15,14 +15,14 @@
             <div class="relative">
                 <div 
                     (click)="proj.isVisible = !proj.isVisible" 
-                    class="flex relative w-fit p-3 rounded-lg text-2xl font-serif justify-center 
+                    class="flex relative p-3 rounded-lg text-2xl font-serif justify-center 
                     bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% 
                     font-bold border-4 border-bd-color
                     shadow-lg shadow-purple-900/50 shadow-shifted 
                     justify-center cursor-pointer">
                     <span class="text-purple-800">{{proj.title}}</span>
                 </div>
-                <svg width="w-fit" height="50" viewBox="0 0 10 50">
+                <svg width="w-full" height="50" viewBox="0 0 10 50">
                     <path 
                     d="M 5 0 V 50" 
                     stroke="#A855F7" 
