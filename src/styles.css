@@ -74,14 +74,14 @@
 }
 
 /* ABOUT ME BOXES HOVER ANIM */
-.about-me-boxes {
+.info-boxes {
   filter: brightness(0.9);
 
   transition: transform 1s ease, filter 1s ease;
 }
 
-.about-me-boxes:hover {
-  transform: scale(1.1);
+.info-boxes:hover {
+  transform: scale(1.075);
   filter: brightness(1.1)
 }
 
