@@ -8,6 +8,7 @@
     --color-secondary: #925FC6;
     --color-tertiary: #C05177;
     --color-neutral: #0A0A0B;
+    --color-bd-color: #A855F7;
 
     --font-brand: "Times New Roman", Times, serif;
     --shadow-shifted: 10px 10px 30px -5px rgba(168, 85, 247, 0.5);
@@ -52,6 +53,15 @@
   }
 }
 
+@keyframes draw-shape {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .animate-glow {
   animation: glow-pulse 16s infinite ease-in-out;
 }
@@ -73,6 +83,15 @@
   animation: btn-gradient 3s ease infinite;
 }
 
+/* DRAWING RECTS */
+path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.draw-box {
+  stroke-dashoffset: 0 !important;
+}
 /* ABOUT ME BOXES HOVER ANIM */
 .info-boxes {
   filter: brightness(0.9);

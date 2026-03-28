@@ -1,3 +1,97 @@
-<div class="w-screen h-screen text-white">project works!</div>
-
-<!-- 3 BUBBLES ON THE SIDE THAT OPENS UP BIG TEXT BOXES -->
+<div class="w-screen h-screen">
+    <span class="flex justify-center text-white pt-4 font-serif text-4xl font-semibold">My&nbsp;<span class="text-primary">Projects!</span></span>
+    <div class="flex w-full h-full container flex mx-auto max-w-7xl flex-row mt-16 justify-center gap-16">
+        <div 
+        *ngFor="let proj of displayProjects; let i = index"
+        class="flex flex-col justify-start items-center pt-2">
+            <div class="relative">
+                <div 
+                    (click)="proj.isVisible = !proj.isVisible" 
+                    class="flex relative w-fit p-3 rounded-lg text-2xl font-serif justify-center 
+                    bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% 
+                    font-bold border-4 border-bd-color
+                    shadow-lg shadow-purple-900/50 shadow-shifted 
+                    justify-center cursor-pointer">
+                    <span class="text-purple-800">{{proj.title}}</span>
+                </div>
+                <svg width="w-fit" height="50" viewBox="0 0 10 50">
+                    <path 
+                    d="M 5 0 V 50" 
+                    stroke="#A855F7" 
+                    stroke-width="4"
+                    pathLength="1"
+                    fill="none"
+                    [class.draw-box]="proj.isVisible"
+                    class="absolute transition-all duration-1000" 
+                    />
+                </svg>
+            </div>
+            <div class="relative w-104 h-134">
+                <svg class="absolute -inset-1 w-[calc(100%+4px)] h-[calc(100%+4px)] pointer-events-none overflow-visible">
+                    <path 
+                    d=
+                    "
+                    M 210 2 
+                    H 408 
+                    Q 418 2 418 12 
+                    V 528 
+                    Q 418 538 408 538 
+                    H 12 
+                    Q 2 538 2 528 
+                    V 12 
+                    Q 2 2 12 2 
+                    H 210 
+                    Z
+                    "
+                    fill="none"
+                    stroke="#A855F7" 
+                    stroke-width="4"
+                    pathLength="1"
+                    [class.draw-box]="proj.isVisible"
+                    class="transition-all duration-1000 delay-[700ms]"
+                    />
+                </svg>
+                <div 
+                [class.opacity-100]="proj.isVisible"
+                [class.delay-1200]="!proj.isVisible"
+                class="
+                w-full h-full rounded-xl 
+                bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% 
+                border-2 border-purple-800 
+                shadow-lg shadow-purple-900 shadow-shifted 
+                shrink-0 
+                opacity-0 transition-opacity duration-500 delay-1700"
+                >
+                    <div class="flex w-full h-full flex-col">
+                        <span class="font-serif text-4xl font-black text-primary pl-4 pt-2">{{proj.title}}</span>
+                        <div class="flex justify-center mt-6">
+                            <div 
+                            class="flex w-full ml-4 mr-4 pl rounded-xl overflow-hidden border-white border-2 shadow-lg shadow-black-600 shadow-offset-x-12 shadow-offset-y-12">
+                                <img src="{{proj.img}}" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <hr class="border-1 border-bd-color mt-2 ml-4 mr-4">
+                        <span class="font-serif text-xl text-primary pl-4 pt-2 whitespace-pre-line">{{proj.description}}</span>
+                        <div class="flex absolute bottom-4 right-2 justify-end items-center gap-2 pr-2">
+                            <a
+                            href="proj.proj_link"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="text-gray-400 hover:text-[#A855F7] transition-colors duration-300"
+                            >
+                                <lucide-icon [img]="icons.SquareArrowOutUpRight" class="size-10 stroke-bd-color"></lucide-icon>
+                            </a>
+                            <a href="your-github-link" target="_blank" class="text-white hover:text-[#A855F7] transition-all">
+                                <img 
+                                    src="https://cdn.simpleicons.org/github/A855F7" 
+                                    class="size-10" 
+                                    alt="GitHub" 
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
