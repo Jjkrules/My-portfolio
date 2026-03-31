@@ -1,4 +1,4 @@
-#directions to run: <br />
+#directions to run (don't put the '#' in terminal): <br />
 #npm install <br />
 #npm install -g @angular/cli <br />
 #npm install lucide-angular <br />
