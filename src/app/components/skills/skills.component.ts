@@ -12,6 +12,7 @@ export class SkillsComponent {
 
   icons = { ChevronLeft, ChevronRight };
 
+  /* ADD SKILLS HERE */
   skills = [
     { index: 0, img: "pythonImg.png", title: "Backend Stack", description: "•Back-end Dev \n •Back-end Dev \n •Back-end Dev"},
     { index: 1, img: "pythonImg.png", title: "Frontend Stack", description: "•Front-end Dev \n •Front-end Dev \n •Front-end Dev"},

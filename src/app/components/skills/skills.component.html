@@ -1,11 +1,11 @@
 <div id="skills-section" class="w-full h-screen overflow-hidden">
-    <span class="flex justify-center text-4xl font-serif font-semibold text-white pt-4">My&nbsp;<span class="text-primary"> Skills</span></span>
+    <span class="flex justify-center text-4xl font-serif font-semibold text-white mt-8">My&nbsp;<span class="text-primary"> Skills</span></span>
 
-    <div class="flex container flex mx-auto max-w-7xl flex-row mt-16 justify-center">
-        <div class="flex flex-row justify-center items-center h-200">
+    <div class="flex container flex mx-auto max-w-7xl flex-row mt-16 justify-center mt-20">
+        <div class="flex flex-row justify-center items-center">
             <lucide-icon (click)="prevIndex()" [img]="icons.ChevronLeft" class="w-24 h-24 cursor-pointer rounded-full stroke-white hover:scale-110 transition-all duration-1000"></lucide-icon>
 
-            <div class="overflow-hidden w-380"> 
+            <div class="overflow-hidden w-full max-w-7xl"> 
                 <div #track class="flex flex-row transition-transform duration-500">
                     <div *ngFor="let skill of displaySkills; let i = index" 
                         class="bg-primary w-104 h-134 mt-6 rounded-xl bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% border-2 border-purple-800 shadow-lg shadow-purple-900 shadow-shifted shrink-0 transition-all duration-500 mb-10"
@@ -15,7 +15,6 @@
                         [class.hover:brightness-110]="curIndex === i"
                         [class.scale-80]="curIndex !== i"
                         [class.opacity-40]="curIndex !== i">
-                        
                         <div class="flex flex-col">
                             <span class="font-serif text-4xl font-black text-primary pl-4 pt-2">{{skill.title}}</span>
                             <div class="flex justify-center mt-6">

@@ -1,5 +1,5 @@
-<div id="projects-section" class="w-screen h-screen">
-    <span class="flex justify-center text-white pt-4 font-serif text-4xl font-semibold">My&nbsp;<span class="text-primary">Projects!</span></span>
+<div id="projects-section" class="w-full h-screen">
+    <span class="flex justify-center text-white pt-4 font-serif text-4xl font-semibold mt-8">My&nbsp;<span class="text-primary">Projects!</span></span>
     <div class="flex w-full h-full container flex mx-auto max-w-7xl flex-row mt-16 justify-center gap-16">
         <div class="flex absolute top-20 left-1/2 -translate-x-1/2 flex-col justify-center items-center font-serif animate-bounce">
             <span class="text-white text-xs">CLICK ME</span>
@@ -61,13 +61,15 @@
                 </svg>
                 <div 
                 [class.opacity-100]="proj.isVisible"
+                [class.info-boxes]="proj.isVisible"
+                [style.transition]="proj.isVisible ? 'opacity 0.6s ease 1.6s' : 'opacity 0.5s ease 0s'"
                 class="
                 w-full h-full rounded-xl 
                 bg-gradient-to-br from-purple-900 via-violet-950 to-black to-150% 
                 border-2 border-purple-800 
                 shadow-lg shadow-purple-900 shadow-shifted 
                 shrink-0 
-                opacity-0 transition-opacity duration-500 delay-1700"
+                opacity-0 transition-opacity duration-500 info-boxes"
                 >
                     <div class="flex w-full h-full flex-col">
                         <span class="font-serif text-4xl font-black text-primary pl-4 pt-2">{{proj.title}}</span>
