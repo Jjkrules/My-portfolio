@@ -11,7 +11,8 @@ export class ProjectsComponent {
   isBoxDrawn = false;
 
   icons = { SquareArrowOutUpRight, ChevronsDown };
-
+  
+  /* ADD PROJECTS STUFF HERE */
   projects = [
     {index: 0, title: "My Portfolio!", img:"projImg.png" , git_hub: "https://github.com/Jjkrules/My-portfolio", proj_link: "", description: "description text", isVisible: false},
     {index: 1, title: "My Senior Project!", img:"projImg.png", git_hub: "", proj_link: "", description: "description text", isVisible: false},

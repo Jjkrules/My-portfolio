@@ -82,12 +82,23 @@
 }
 
 /* FADE IN ANIMATION FOR NODES */
-.fade-in {
+#experience-section .fade-in {
+  opacity: 0;
+  animation: none;
+}
+
+#experience-section.animate .fade-in {
   animation: customFadeIn 1s ease forwards;
 }
 
 /* DRAWING HORRIZONTAL LINE */
-.draw-line {
+#experience-section .draw-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: none;
+}
+
+#experience-section.animate .draw-line {
   animation: draw-shape 1s ease-in-out forwards;
 }
 
@@ -101,7 +112,7 @@ path {
 .draw-box {
   stroke-dashoffset: 0 !important;
 }
-/* ABOUT ME BOXES HOVER ANIM */
+/* BOXES HOVER ANIM */
 .info-boxes {
   filter: brightness(0.9);
 
@@ -122,4 +133,19 @@ path {
 .btn-anim:hover {
   transform: scale(1.05);
   filter: brightness(1.25);
+}
+
+/* SCROLL BAR */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background: #A855F7;
+    border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
 }
