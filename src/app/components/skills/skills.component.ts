@@ -14,11 +14,11 @@ export class SkillsComponent {
 
   /* ADD SKILLS HERE */
   skills = [
-    { index: 0, img: "pythonImg.png", title: "Backend Stack", description: "•Back-end Dev \n •Back-end Dev \n •Back-end Dev"},
-    { index: 1, img: "pythonImg.png", title: "Frontend Stack", description: "•Front-end Dev \n •Front-end Dev \n •Front-end Dev"},
-    { index: 2, img: "pythonImg.png", title: "Frameworks", description: "•Frameworks \n •Frameworks \n •Frameworks"},
-    { index: 3, img: "pythonImg.png", title: "Tools", description: "•Tools \n •Tools \n •Tools"},
-    { index: 4, img: "pythonImg.png", title: "LLM", description: "•LLM \n •LLM \n •LLM"},
+    { index: 0, img: "back-end-img.png", title: "Backend Stack", description: "•Java v26 \n •Python v3.14 \n •C v23 \n •C++ v23 \n •C# v14"},
+    { index: 1, img: "front-end-img.png", title: "Frontend Stack", description: "•Javascript / HTML5 / CSS \n •Tailwind CSS v4 \n •Typescript v6"},
+    { index: 2, img: "frameworks-img.png", title: "Frameworks", description: "•Angular v21\n •React v19 \n •Spring Boot v4"},
+    { index: 3, img: "tools-img.png", title: "Tools", description: "•VS Code \n •AWS \n •IntelliJ \n •Github \n •Jupyter Notebooks"},
+    { index: 4, img: "llm-img.png", title: "LLMs", description: "•ChatGPT 5.3 \n •Gemini 1.5 Flash \n •Claude 3 Sonnet \n •DeepSeek-V3"},
   ];
 
   displaySkills = [

@@ -14,8 +14,8 @@ export class ProjectsComponent {
   
   /* ADD PROJECTS STUFF HERE */
   projects = [
-    {index: 0, title: "My Portfolio!", img:"projImg.png" , git_hub: "https://github.com/Jjkrules/My-portfolio", proj_link: "", description: "description text", isVisible: false},
-    {index: 1, title: "My Senior Project!", img:"projImg.png", git_hub: "", proj_link: "", description: "description text", isVisible: false},
+    {index: 0, title: "My Portfolio!", img:"my-portfolio-img.png" , git_hub: "https://github.com/Jjkrules/My-portfolio", proj_link: "", description: "You're looking at it! This website was a lot of work! I'm really proud of some of the results I got, such as the svg animations and the overall aesthetic.", isVisible: false},
+    {index: 1, title: "Project 2", img:"projImg.png", git_hub: "", proj_link: "", description: "description text", isVisible: false},
     {index: 2, title: "Project 3", img:"projImg.png", git_hub: "", proj_link: "", description: "description text", isVisible: false}
   ]
 
