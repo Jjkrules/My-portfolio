@@ -6,12 +6,15 @@ import { AboutMeComponent } from "../../components/about-me/about-me.component";
 import { ExperienceComponent } from "../../components/experience/experience.component";
 import { SkillsComponent } from "../../components/skills/skills.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
+import { IntroOverlayComponent } from "../../components/intro-overlay/intro-overlay.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, HeaderComponent, LandingComponent, AboutMeComponent, ExperienceComponent, SkillsComponent, ProjectsComponent],
+  imports: [NavbarComponent, HeaderComponent, LandingComponent, AboutMeComponent, ExperienceComponent, SkillsComponent, ProjectsComponent, IntroOverlayComponent],
   templateUrl: './home.component.html',
   styleUrl: '../../../styles.css'
 })
-export class HomeComponent {}
+export class HomeComponent {
+  showIntro = true;
+}
