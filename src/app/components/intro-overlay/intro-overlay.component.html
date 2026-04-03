@@ -7,7 +7,8 @@ class="flex w-full h-full bg-black z-60 fixed inset-0 justify-center items-cente
         @if ($index < counter()) {
         <span [class]="($index < 6) || ($index > 6 && $index < 12)? 'text-primary' : 'text-white'" class="font-serif text-6xl whitespace-pre">{{ letter }}</span>
         }
-  }
+    }
+    <span class="text-white animate-blink text-6xl">|</span>
 </div>
 
 <!-- WHAT WE WANT 

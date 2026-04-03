@@ -60,8 +60,17 @@
   }
 }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .animate-glow {
   animation: glow-pulse 16s infinite ease-in-out;
+}
+
+.animate-blink {
+  animation: blink 0.5s step-start infinite;
 }
 
 .animate-gradient {
