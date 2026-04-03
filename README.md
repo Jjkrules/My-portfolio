@@ -1,4 +1,4 @@
-# Jeswin James — Portfolio
+# My Portfolio
 
 A personal portfolio website built to showcase my work, skills, and experience as a developer.
 
